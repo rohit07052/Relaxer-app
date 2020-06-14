@@ -3,20 +3,38 @@
   <head>
     <meta charset="utf-8">
     <title>Relaxer app</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
     <link rel='stylesheet' href="style.css">
   </head>
   <body>
-    <h1>Ease your body and relax.</h1>
+    <h1>Ease your body and relax</h1>
     <div class="container">
-    <div class="circle">
-     </div>
-    <p id="text"></p>
-    <div class="pointer-container">
-    <div class="pointer"></div>
-    </div>
+      <div class="circle">
+      </div>
+      <p id="text"></p>
+      <div class="pointer-container">
+        <div class="pointer"></div>
+      </div>
 
-    <div class="gradient-circle"><div>
+      <div class="gradient-circle"></div>
     </div>
+    <!-- the audio code -->
+    <audio id="player" controls="controls">
+      <source id ="mp3_src" src="https://www.global-journey.com/MP3-Samples/Free-25/Sunrise-Serenade.mp3" type="audio/mp3" />
+
+      doesn't work
+
+    </audio>
+    <div class="containers">
+    <ul>
+
+        <a href="#" source="https://www.global-journey.com/MP3-Samples/Free-25/Sunrise-Serenade.mp3"><li>    Clouds </li></a>
+        <a href="#" source="http://www.global-journey.com/MP3-Samples/Free-25/Orithyia-by-Moonlight.mp3"><li>Beach</li></a>
+        <a href="#" source="http://www.global-journey.com/MP3-Samples/GJ-Dancing-waters.mp3"><li>Water</li></a>
+      </ul>
+  <button id="pause"> PAUSE </button>
+  </div>
     <script src= "scripts.js">
     </script>
   </body>
